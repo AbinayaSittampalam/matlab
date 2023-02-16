@@ -1,0 +1,13 @@
+function J=alphaBlend(IFG,IBG,a)
+
+if length(size(IFG))==3
+    IFG=rgb2gray(IFG);
+end
+if length(size(IBG))==3
+    IBG=rgb2gray(IFG);
+end
+
+[M,N]=size(IFG);
+J=IFG;
+
+    
